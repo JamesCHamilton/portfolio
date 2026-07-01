@@ -106,7 +106,7 @@ export function Header() {
             <Linkedin className="h-4 w-4" />
           </a>
           <a
-            href="/James_Hamilton_Resume - Google Docs.pdf"
+            href="/James_Hamilton_Resume.pdf"
             target="_blank"
             className="relative inline-flex items-center justify-center font-medium transition-all duration-300 border border-blue-500/30 bg-black/50 text-blue-400 hover:bg-blue-900/10 hover:text-blue-300 h-10 rounded-lg px-4 text-sm gap-2"
           >
@@ -165,7 +165,7 @@ export function Header() {
               </a>
             </div>
             <a
-              href="/James_Hamilton_Resume - Google Docs.pdf"
+              href="/James_Hamilton_Resume.pdf"
               target="_blank"
               className="relative inline-flex items-center justify-center font-medium transition-all duration-300 border border-blue-500/30 bg-black/50 text-blue-400 hover:bg-blue-900/10 hover:text-blue-300 h-10 rounded-lg px-4 text-sm gap-2"
             >

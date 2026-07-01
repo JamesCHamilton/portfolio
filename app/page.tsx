@@ -613,7 +613,7 @@ export default function Home() {
           </div>
           <p>© {new Date().getFullYear()} James Hamilton. Built with Next.js & Tailwind CSS.</p>
           <div className="flex gap-4">
-            <a href="/James_Hamilton_Resume - Google Docs.pdf" target="_blank" className="hover:text-white transition-colors flex items-center gap-1">
+            <a href="/James_Hamilton_Resume.pdf" target="_blank" className="hover:text-white transition-colors flex items-center gap-1">
               <FileText className="h-3.5 w-3.5" />
               Resume PDF
             </a>
