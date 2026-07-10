@@ -164,6 +164,7 @@ export function Header() {
                 <Linkedin className="h-5 w-5" />
               </a>
             </div>
+            {/* Resume Button */}
             <a
               href="/James_Hamilton_Resume.pdf"
               target="_blank"
