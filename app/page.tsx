@@ -31,35 +31,34 @@ export default function Home() {
     { name: "Python", category: "Language", color: "from-blue-500/20 to-cyan-500/20 text-blue-300 border-blue-500/30" },
     { name: "TypeScript", category: "Language", color: "from-blue-600/20 to-indigo-600/20 text-blue-300 border-blue-500/30" },
     { name: "Golang", category: "Language", color: "from-cyan-500/20 to-teal-500/20 text-cyan-300 border-cyan-500/30" },
-    {name: "Java", category: "Language", color: "from-red-500/20 to-orange-500/20 text-red-300 border-red-500/30"},
+    { name: "Java", category: "Language", color: "from-red-500/20 to-orange-500/20 text-red-300 border-red-500/30" },
     { name: "Next.js", category: "Framework", color: "from-zinc-800 to-zinc-900 text-white border-zinc-700" },
     { name: "React.js", category: "Framework", color: "from-sky-500/20 to-blue-500/20 text-sky-300 border-sky-500/30" },
     { name: "AWS", category: "DevOps", color: "from-amber-500/20 to-orange-500/20 text-amber-300 border-amber-500/30" },
     { name: "PostgreSQL", category: "Database", color: "from-indigo-500/20 to-blue-500/20 text-indigo-300 border-indigo-500/30" },
     { name: "Supabase", category: "Database", color: "from-emerald-500/20 to-teal-500/20 text-emerald-300 border-emerald-500/30" },
     { name: "Redis", category: "Database", color: "from-rose-500/20 to-red-500/20 text-rose-300 border-rose-500/30" },
-
   ]
 
   const skillGroups = [
     {
       title: "Languages",
       icon: <Code className="h-5 w-5 text-blue-400" />,
-      skills: ["Python", "TypeScript", "Golang", "JavaScript", "Java", "HTML", "CSS", "SQL"],
+      skills: ["Python", "TypeScript", "Golang", "JavaScript", "Java", "HTML", "CSS", "SQL", "C#", "Lua"],
       borderColor: "hover:border-blue-500/30",
       glowColor: "group-hover:bg-blue-500/10"
     },
     {
       title: "Frameworks",
       icon: <Cpu className="h-5 w-5 text-purple-400" />,
-      skills: ["React.js", "Next.js", "Express.js", "Node.js", "Deno", ".NET"],
+      skills: ["React.js", "Next.js", "Express.js", "Node.js", "Deno", ".NET", "Spring Boot", "FastAPI"],
       borderColor: "hover:border-purple-500/30",
       glowColor: "group-hover:bg-purple-500/10"
     },
     {
       title: "DevOps & Cloud",
       icon: <Server className="h-5 w-5 text-amber-400" />,
-      skills: ["Docker", "AWS EC2", "AWS S3", "AWS Route 53", "NGINX", "Azure", "CI/CD"],
+      skills: ["Docker", "AWS EC2", "AWS S3", "AWS Route 53", "NGINX", "Azure", "CI/CD", "Vercel"],
       borderColor: "hover:border-amber-500/30",
       glowColor: "group-hover:bg-amber-500/10"
     },
@@ -74,41 +73,53 @@ export default function Home() {
 
   const experience = [
     {
-      role: "Software Engineer Intern (Clinical AI & Full-Stack)",
-      company: "New York State EMS & Hospital Network (via Pace University)",
+      role: "Software Engineer (Parkidsy)",
+      company: "Seidenberg Creative Lab",
       location: "New York, NY",
-      period: "May 2025 - Present",
+      period: "Mar 2026 - Present",
       bullets: [
-        "Architecting a live-triage EMS application to securely route patient data across the NY hospital network.",
-        "Developing a decoupled architecture, building a native Android (Java) client to consume AI backend services.",
-        "Designing backend AI logic to optimize emergency resource allocation under zero-fail constraints.",
-        "Engineering real-time, data-compliant pipelines to synchronize critical healthcare metrics."
+        "Architected a mobile-optimized full-stack web application wrapped inside native iOS and Android WebViews.",
+        "Leveraged the Bun runtime to build high-performance, low-latency backend API routes.",
+        "Engineered a relational Supabase (PostgreSQL) schema for secure authentication and real-time data storage."
       ],
-      highlights: ["Clinical AI", "Zero-Fail Constraints", "Real-Time Pipelines"]
+      highlights: ["Next.js & Bun", "Supabase & PostgreSQL", "iOS/Android WebViews"]
     },
     {
-      role: "Software Engineer (Founding Team)",
+      role: "NSF CISE REU Software Engineer – Applied Clinical AI",
+      company: "Pace University (in partnership with NY State Hospitals)",
+      location: "New York, NY",
+      period: "May 2026 - Present",
+      bullets: [
+        "Engineered a native Android (Java) tablet application deployed to New York hospital networks, establishing a continuous feedback loop with medical professionals to refine clinical UI.",
+        "Architected an on-device AI chatbot utilizing local LLMs and RAG, ensuring strict HIPAA compliance by preventing sensitive patient triage data from hitting third-party APIs.",
+        "Developed an AI-powered Medication Scan feature utilizing embedded device cameras to rapidly capture, parse, and validate pharmacological data in live-triage environments."
+      ],
+      highlights: ["Applied Clinical AI", "On-Device LLMs & RAG", "HIPAA Compliance", "Android (Java)"]
+    },
+    {
+      role: "Software Engineer (Founding Engineer)",
       company: "Arcampass",
       location: "Remote",
       period: "Feb 2025 – Jan 2026",
       bullets: [
-        "Built and deployed a production web platform using Next.js, Express, and MongoDB, supporting 200 monthly active users and handling 1,000 API requests per day.",
-        "Designed MongoDB schemas for user accounts, sessions, and transactional data. Added compound indexes on high traffic queries, reducing average read latency from 320 ms to 140 ms.",
-        "Containerized backend with Docker and deployed to AWS EC2 behind NGINX. Reduced deployment time from 12 minutes to 8 minutes and improved API latency to 180 ms using Redis caching."
+        "Joined as a founding engineer at an early-stage ed-tech startup building an AI-driven personalized learning platform for higher education; built and shipped the initial platform using Next.js (React), Express, and MongoDB.",
+        "Designed MongoDB schemas for user accounts, sessions, and transactional data, then added compound indexes on the highest-traffic queries, cutting average database read latency from 320ms to 140ms.",
+        "Containerized the backend with Docker, deployed to AWS EC2 behind NGINX, and layered in Redis caching, cutting deployment time from 12 minutes to 8.",
+        "Engineered an automated Python data extraction pipeline to continuously monitor, parse, and ingest over 14,000 distinct NYU course records, extracting complex nested metadata including professor assignments and syllabus descriptions."
       ],
-      highlights: ["Next.js & Express", "AWS EC2 / NGINX", "Latency 320ms -> 140ms", "Redis Caching"]
+      highlights: ["Next.js & Express", "AWS EC2 / NGINX", "Latency 320ms -> 140ms", "Redis Caching", "Data Extraction Pipeline"]
     },
     {
-      role: "AI Research Assistant - LLM Code Automation",
+      role: "AI Research Assistant (CRA Funded) - LLM Code Automation",
       company: "Pace University, Seidenberg School of CSIS",
       location: "New York, NY",
       period: "Apr 2025 – Sep 2025",
       bullets: [
         "Developed a Python benchmarking framework to evaluate 5 LLMs across 50 structured software engineering tasks.",
-        "Measured code correctness, runtime failures, and security violations. Identified a 28 percent average failure rate in authentication and input validation logic across models.",
+        "Measured code correctness, runtime failures, and security violations using Pytest. Identified a 28 percent average failure rate in authentication and input validation logic across models.",
         "Automated evaluation using unit tests and static analysis checks, reducing manual grading time by 60 percent and improving result reproducibility."
       ],
-      highlights: ["LLM Evaluation", "Python Benchmarking", "60% Grading Time Reduction"]
+      highlights: ["LLM Evaluation", "Python Benchmarking", "60% Grading Time Reduction", "Pytest"]
     },
     {
       role: "Software Engineer Intern",
@@ -121,6 +132,17 @@ export default function Home() {
         "Implemented Redis TTL caching and optimized PostgreSQL queries in the CRM dashboard. Reduced average page load time from 2.4 seconds to 0.9 seconds and cut third party API costs by 15 percent."
       ],
       highlights: ["SEO 71 -> 88", "OpenAI & Django", "Page Load 2.4s -> 0.9s", "Redis TTL Caching"]
+    },
+    {
+      role: "Coding Instructor",
+      company: "TheCoderSchool",
+      location: "Tribeca, NY, USA",
+      period: "May 2023 - Present",
+      bullets: [
+        "Taught 100+ hours of instruction in Python, JavaScript, Scratch, Lua, C#, HTML/CSS to students aged 7–18.",
+        "Mentored 20+ students from ideation to deployment of full-stack projects including games and web apps."
+      ],
+      highlights: ["Python & JavaScript", "Scratch & Lua & C#", "Student Mentorship"]
     }
   ]
 
@@ -134,6 +156,17 @@ export default function Home() {
         "Architected a real estate DaaS platform featuring a hybrid Go and Python (Pandas) ETL pipeline that standardizes unstructured MongoDB market listings and municipal records (MapPLUTO, ACRIS) to the NYC BBL standard.",
         "Built a serverless Next.js/React frontend powered by a secure Node.js backend to manage API routing, protect environment variables, and handle email-gated data streaming.",
         "Integrated a zero-cost architecture using Supabase (PostgreSQL) for automated lead capture and CRM routing, alongside Stripe for seamless B2B monetization."
+      ]
+    },
+    {
+      title: "EthicsOS",
+      subtitle: "Clinical AI Orchestration",
+      link: "",
+      stack: ["Python", "FastAPI", "PostgreSQL", "OpenAI API", "Supabase"],
+      bullets: [
+        "Architected an asynchronous clinical orchestration platform (Top 10 Finalist, Cornell Hackathon) using Python (FastAPI) and OpenAI GPT-4o, enforcing strict JSON schemas to automate medical insurance adjudication while eliminating AI hallucinations.",
+        "Built a data enrichment ETL pipeline joining federal NPI registries with NYC Health metadata via heuristic matching, optimizing PostgreSQL with JSONB and GIN-indexing for rapid FHIR resource queries.",
+        "Engineered a dual-output interoperability pipeline (FHIR APIs and e-Fax) and implemented a real-time observability layer via Supabase pub/sub to synchronize automated clinical decisions without blocking the main event loop."
       ]
     },
     {
@@ -367,10 +400,10 @@ export default function Home() {
                           <ChevronRight className="h-4 w-4 text-blue-500 shrink-0 mt-1" />
                           <span>
                             {/* Make key metrics bold */}
-                            {bullet.split(/(320 ms to 140 ms|12 minutes to 8 minutes|180 ms|60 percent|28 percent|71 to 88|20 percent|2\.4 seconds to 0\.9 seconds|15 percent)/g).map((part, pIdx) => {
+                            {bullet.split(/(320 ms to 140 ms|320ms to 140ms|12 minutes to 8 minutes|12 minutes to 8|180 ms|60 percent|28 percent|71 to 88|20 percent|2\.4 seconds to 0\.9 seconds|15 percent|100\+|20\+|14,000|Top 10|10\+|50|5 LLMs)/g).map((part, pIdx) => {
                               const matches = [
-                                "320 ms to 140 ms", "12 minutes to 8 minutes", "180 ms", "60 percent",
-                                "28 percent", "71 to 88", "20 percent", "2.4 seconds to 0.9 seconds", "15 percent"
+                                "320 ms to 140 ms", "320ms to 140ms", "12 minutes to 8 minutes", "12 minutes to 8", "180 ms", "60 percent",
+                                "28 percent", "71 to 88", "20 percent", "2.4 seconds to 0.9 seconds", "15 percent", "100+", "20+", "14,000", "Top 10", "10+", "50", "5 LLMs"
                               ].includes(part);
                               return matches ? <strong key={pIdx} className="text-white font-semibold">{part}</strong> : part;
                             })}
